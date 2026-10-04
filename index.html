@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="InfernoX — premium gaming platform. Discover, play and publish games.">
+  <title>InfernoX — Enter. Play. Conquer.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader"><div class="loader-mark">X</div><div class="loader-name">INFERNOX</div><div class="loader-line"><span></span></div></div>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span class="brand-fire">✦</span> INFERNO<span>X</span></a>
+    <nav id="desktopNav">
+      <a href="#home">Home</a><a href="#games">Games</a><a href="#categories">Categories</a><a href="#about">About</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="ghost-btn" id="adminOpen">Admin</button>
+      <button class="primary-btn" id="publishOpen">+ Publish Game</button>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a><a href="#games">Games</a><a href="#categories">Categories</a><a href="#about">About</a>
+    <button class="primary-btn" id="mobilePublish">+ Publish Game</button>
+  </div>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-grid"></div><div class="hero-glow"></div><div class="particles" id="particles"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span></span> THE NEXT GAMING PLATFORM</div>
+        <h1>ENTER THE<br><em>NEXT LEVEL.</em></h1>
+        <p>Discover, play and experience games created for players who want something different.</p>
+        <div class="hero-actions"><a class="primary-btn large" href="#games">Explore Games <b>→</b></a><button class="outline-btn large" id="heroPublish">Publish Your Game</button></div>
+        <div class="hero-stats"><div><strong id="statGames">0</strong><span>Games</span></div><div><strong>2026</strong><span>Launched</span></div><div><strong>∞</strong><span>Possibilities</span></div></div>
+      </div>
+      <div class="hero-orb"><div class="orb-ring ring1"></div><div class="orb-ring ring2"></div><div class="orb-core">X</div></div>
+    </section>
+
+    <section class="featured section">
+      <div class="section-head"><div><div class="eyebrow">HANDPICKED</div><h2>Featured <span>Games</span></h2></div><a href="#games">View all →</a></div>
+      <div id="featuredGrid" class="featured-grid"></div>
+    </section>
+
+    <section class="games section" id="games">
+      <div class="section-head"><div><div class="eyebrow">DISCOVER</div><h2>Explore <span>Games</span></h2><p>Find your next obsession.</p></div></div>
+      <div class="toolbar">
+        <div class="search-box"><span>⌕</span><input id="searchInput" placeholder="Search games, genres, developers..."><button id="clearSearch">×</button></div>
+        <div class="filters">
+          <select id="genreFilter"><option value="">All Genres</option></select>
+          <select id="platformFilter"><option value="">All Platforms</option><option>Android</option><option>Windows</option><option>Web</option></select>
+          <select id="sortFilter"><option value="latest">Latest</option><option value="popular">Popular</option><option value="rating">Highest Rated</option><option value="az">A–Z</option></select>
+        </div>
+      </div>
+      <div id="gameGrid" class="game-grid"></div>
+      <div id="emptyState" class="empty hidden"><div>⌕</div><h3>NO GAMES FOUND</h3><p>Try another search or explore our categories.</p></div>
+    </section>
+
+    <section class="categories section" id="categories">
+      <div class="section-head"><div><div class="eyebrow">BROWSE</div><h2>Choose Your <span>World</span></h2></div></div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-copy"><div class="eyebrow">THE INFERNOX STANDARD</div><h2>Built for people who <span>love games.</span></h2><p>InfernoX is a place to discover original experiences, support creators and find games worth playing. Fast, focused and built around the player.</p><a href="#games" class="outline-btn">Explore the library →</a></div>
+      <div class="why-grid">
+        <article><b>01</b><h3>QUALITY FIRST</h3><p>Professional presentation for every game.</p></article>
+        <article><b>02</b><h3>GAMER FIRST</h3><p>Discovery designed around what players want.</p></article>
+        <article><b>03</b><h3>DEVELOPER FRIENDLY</h3><p>A clean place to showcase your creation.</p></article>
+        <article><b>04</b><h3>ALWAYS EVOLVING</h3><p>New worlds and experiences, constantly.</p></article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div><div class="eyebrow">READY TO CREATE?</div><h2>YOUR GAME.<br><span>YOUR STAGE.</span></h2></div>
+      <button class="primary-btn large" id="ctaPublish">Publish a Game →</button>
+    </section>
+  </main>
+
+  <footer><div class="footer-top"><div><a class="brand" href="#home"><span class="brand-fire">✦</span> INFERNO<span>X</span></a><p>Games built beyond limits.</p></div><div class="footer-links"><div><b>Explore</b><a href="#games">Games</a><a href="#categories">Categories</a><a href="#about">About</a></div><div><b>Developers</b><button id="footerPublish">Publish Game</button><button id="footerAdmin">Admin</button></div><div><b>Social</b><a href="#">YouTube</a><a href="#">Discord</a><a href="#">Instagram</a></div></div></div><div class="footer-bottom">© 2026 InfernoX. All Rights Reserved.<span>ENTER. PLAY. CONQUER.</span></div></footer>
+
+  <div class="modal" id="gameModal"><div class="modal-card game-detail" id="gameDetail"></div></div>
+
+  <div class="modal" id="publishModal"><div class="modal-card"><button class="close" data-close="publishModal">×</button><div class="eyebrow">DEVELOPER PORTAL</div><h2>Publish Your <span>Game</span></h2><p class="muted">Add a game to this local demo library. Data is saved in your browser.</p>
+    <form id="publishForm" class="form-grid">
+      <label>Game Name<input name="title" required placeholder="Your game title"></label>
+      <label>Developer<input name="developer" required placeholder="Studio / creator"></label>
+      <label>Genre<select name="genre" required><option value="">Choose genre</option><option>Action</option><option>Adventure</option><option>Horror</option><option>Survival</option><option>Racing</option><option>Puzzle</option><option>Strategy</option><option>Experimental</option></select></label>
+      <label>Platform<select name="platform" required><option>Android</option><option>Windows</option><option>Web</option></select></label>
+      <label class="full">Short Description<textarea name="description" required placeholder="Tell players about your game..."></textarea></label>
+      <label>Version<input name="version" value="1.0"></label>
+      <label>Release Date<input name="releaseDate" type="date"></label>
+      <label class="full">Cover Image URL<input name="coverImage" placeholder="https://... (optional)"></label>
+      <label class="full">Download / Play URL<input name="downloadUrl" placeholder="https://... (optional)"></label>
+      <button class="primary-btn full" type="submit">Submit Game →</button>
+    </form>
+  </div></div>
+
+  <div class="modal" id="adminModal"><div class="modal-card admin-panel"><button class="close" data-close="adminModal">×</button><div class="eyebrow">CONTROL CENTER</div><h2>InfernoX <span>Admin</span></h2><div class="admin-stats"><div><b id="aTotal">0</b><small>Total Games</small></div><div><b id="aFeatured">0</b><small>Featured</small></div><div><b id="aViews">0</b><small>Total Views</small></div></div><div class="admin-add"><h3>Game Library</h3><button class="primary-btn" id="adminAdd">+ Add Game</button></div><div id="adminList"></div><p class="admin-note">Demo admin mode: changes are stored in this browser using localStorage. Connect a backend/database in Replit for real multi-user publishing.</p></div></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
